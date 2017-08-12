@@ -37,13 +37,14 @@ public class ShowLinksApp {
 			
 			if (linkMap.containsKey(hostURL)) {
 				linkMap.put(hostURL, linkMap.get(hostURL) + 1);
-            } else {
-                linkMap.put(hostURL, 1);
-            }
+            		} 
+			else {
+                		linkMap.put(hostURL, 1);
+            		}
 			
 		}
 		for (Entry<String, Integer> e : linkMap.entrySet()) {
-            System.out.println(e.getKey() + " - " + e.getValue());
-        }
+            		System.out.println(e.getKey() + " - " + e.getValue());
+        	}
 	}
 }
