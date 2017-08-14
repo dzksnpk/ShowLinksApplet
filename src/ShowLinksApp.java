@@ -27,7 +27,8 @@ public class ShowLinksApp {
 		
 		// regex for reading only URLs
 		Elements links = doc.select("a[href^=http]");
-
+		
+		// listing number of links found on website 
 		System.out.printf("\nLinks: (%d)\n", links.size());
 		
 		// creating map for hostURLs with incrementing numbers of them
